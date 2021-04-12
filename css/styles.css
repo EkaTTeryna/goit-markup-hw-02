@@ -24,7 +24,6 @@ body {
     text-decoration: none;
     color: var(--title-cl);
 }
-
 .logo-blue {
     font-family: var(--logo-font);
     font-weight: bold;
