@@ -1,5 +1,4 @@
 :root {
-    --main-font: 'Roboto', sans-serif;
     --logo-font: 'Raleway' sans-serif;
     --main-text-cl: #757575;
     --title-cl: #212121;
@@ -9,24 +8,33 @@
     --dark-bg: #2F303A;
     --second-bg: #F5F4FA;
 }
-
-.body {
-    font-family: var(--main-font);
+body {
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--main-text-cl);
     background-color: var(--main-bg);
 }
-
 .logo {
     font-family: var(--logo-font);
+    font-weight: bold;
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-    color: var(--accent-cl);
+    color: var(--title-cl);
 }
 
+.logo-blue {
+    font-family: var(--logo-font);
+    font-weight: bold;
+    color: var(--accent-cl);
+}
+.logo-white {
+    font-family: var(--logo-font);
+    font-weight: bold;
+    color: var(--alt-title-cl);
+}
 .link {
     color: inherit;
     text-decoration: none;
@@ -43,8 +51,7 @@
 }
 .link-page {
     text-decoration: none;
-    color: var(--accent-cl);
-    
+    color: var(--accent-cl);  
 }
 .link-contact {
     text-decoration: none;
@@ -82,7 +89,6 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--alt-title-cl);
-  
 }
 
 .alt-title {
@@ -133,6 +139,7 @@
 }
 .address-link {
     font-style: normal;
+    text-decoration: none;
     color: rgba(255, 255, 255, 0.6);     
 }
 .address-link:hover,
@@ -142,7 +149,14 @@
 
 .projects-title,
 .projects-examples {
-    color: var(--alt-title-cl);
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    margin: -1px;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .projects-button {
